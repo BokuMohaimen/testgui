@@ -1,0 +1,6 @@
+name: Testgui
+version: @version@
+main: testgui.testgui.Testgui
+api-version: 1.16
+commands:
+  mgui:
