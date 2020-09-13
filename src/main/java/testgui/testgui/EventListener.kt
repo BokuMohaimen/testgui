@@ -28,7 +28,7 @@ class EventListener(var plg : Testgui, val log : Logger = plg.getLogger()) : Lis
                     when (e.currentItem?.itemMeta?.displayName) {
                         "§6§lGOD" -> {
                             player?.sendMessage("§6§lGODボタンをクリックしました。")
-                            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "playsound minecraft:slot.godsoroi_2 master ${player?.name} ~ ~ ~  10000000000000 1")
+                            player?.playSound(player?.getLocation(), "slot.godsoroi_2", 1.0f, 1.0f)
                         }
 
                         "ボタン2" -> {

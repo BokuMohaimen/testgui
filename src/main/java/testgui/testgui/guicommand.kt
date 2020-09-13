@@ -29,7 +29,7 @@ object guicommand : CommandExecutor{
             }
 
             else -> {
-                sender.sendMessage("ELSE")
+                sender.sendMessage("Usage: /mgui open")
                 true
             }
         }
